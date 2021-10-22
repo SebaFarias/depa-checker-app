@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Depa Checker</string>
+    <string name="lbl_login">Login</string>
+    <string name="txt_mail">E-mail</string>
+    <string name="txt_password">Contraseña</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="err_login">Usuario o contraseña incorrecta</string>
+    <string name="accepted_pass">123Pass</string>
+</resources>
