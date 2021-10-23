@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listarFragment">
+
+    <fragment
+        android:id="@+id/listarFragment"
+        android:name="com.example.checkdepa.ui.ListarFragment"
+        android:label="fragment_listar"
+        tools:layout="@layout/fragment_listar" >
+        <action
+            android:id="@+id/action_listarFragment_to_checkFragment"
+            app:destination="@id/checkFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkFragment"
+        android:name="com.example.checkdepa.ui.CheckFragment"
+        android:label="fragment_check"
+        tools:layout="@layout/fragment_check" />
+</navigation>

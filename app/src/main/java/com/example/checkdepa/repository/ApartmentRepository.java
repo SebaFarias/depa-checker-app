@@ -44,5 +44,6 @@ public class ApartmentRepository {
     public LiveData<Apartment> buscar(int id){
         return this.aDb.apartmentDao().buscar(id);
     }
+    public LiveData<Integer> getCount(){ return this.aDb.apartmentDao().getCount(); }
 
 }

@@ -8,7 +8,11 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import android.os.Bundle;
 
+import com.example.checkdepa.R;
 import com.example.checkdepa.databinding.ActivityPrincipal3Binding;
+
+import javax.xml.transform.Result;
+
 
 public class Principal extends AppCompatActivity {
 
@@ -21,7 +25,7 @@ public class Principal extends AppCompatActivity {
         b = ActivityPrincipal3Binding.inflate(getLayoutInflater());
         setContentView(b.getRoot());
 
-        NavHostFragment host = (NavHostFragment) getSupportFragmentManager().findFragmentById();
+        NavHostFragment host = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.navFrag);
         nav = host.getNavController();
 
         NavigationUI.setupActionBarWithNavController(this,nav);

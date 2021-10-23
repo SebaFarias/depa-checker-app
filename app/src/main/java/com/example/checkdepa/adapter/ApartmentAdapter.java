@@ -18,6 +18,7 @@ import java.util.List;
 public class ApartmentAdapter extends RecyclerView.Adapter<ApartmentAdapter.ApartmentViewHolder> {
 
     private List<Apartment> lista;
+
     private ApartmentViewModel model;
     private OnClickListener listener;
 

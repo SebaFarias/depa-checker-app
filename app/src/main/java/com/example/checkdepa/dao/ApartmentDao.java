@@ -26,5 +26,7 @@ public interface ApartmentDao {
     public LiveData<List<Apartment>> listar();
     @Query("SELECT * FROM apartment_table WHERE id = :id")
     public LiveData<Apartment> buscar(int id);
+    @Query("SELECT COUNT(id) FROM apartment_table")
+    public LiveData<Integer> getCount();
 
 }
